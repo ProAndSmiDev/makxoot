@@ -1,0 +1,16 @@
+@include media($width: phone)
+  .logo
+    order: 2
+    transition: filter .4s ease-in-out
+
+    &:before
+      display: none
+
+    &:hover
+      filter: invert(25%)
+
+@include media($width: desktop)
+  .logo
+    order: 1
+    margin:
+      right: 35px

@@ -1,0 +1,92 @@
+@include media($width: phone)
+  .nav
+    order: 1
+    &__burger
+      background-color: transparent
+      &:hover
+        background-color: transparent
+      &.active
+        position: relative
+        span
+          display: none
+
+        &:before
+          transform: rotate(-45deg)
+        &:after
+          top: 0
+          position: absolute
+          transform: rotate(45deg)
+      span
+        margin:
+          top: 5px
+          bottom: 5px
+        width: 30px
+        height: 2px
+        display: block
+        background-color: #fff
+
+      &:before,
+      &:after
+        content: ''
+        width: 30px
+        height: 2px
+        display: block
+        background-color: #fff
+        transition: transform .4s ease-in-out
+    &-list
+      top: 85px
+      left: -100%
+      width: 100%
+      display: flex
+      position: absolute
+      align-items: center
+      justify-content: center
+      flex-flow: column wrap
+      background-color: #00658c
+      transition: left .4s ease-in-out
+
+      &__item
+        width: 100%
+        display: block
+
+      &__link
+        padding:
+          top: 10px
+          bottom: 10px
+        width: 100%
+        display: block
+        text-align: center
+        text-decoration: none
+        border: 1px solid #fff
+        transition: background-color .4s ease-in-out
+        &:hover
+          background-color: #004e6b
+
+        &:before
+          display: none
+
+@include media($width: desktop)
+  .nav
+    order: 2
+    &__burger
+      display: none
+    &-list
+      width: auto
+      position: static
+      flex-flow: row wrap
+      background-color: transparent
+      &__item
+        width: auto
+        &:not(:last-child)
+          margin-right: 57px
+
+      &__link
+        border: 0
+        width: auto
+        display: inline-block
+
+        &:hover
+          background-color: transparent
+
+        &:before
+          display: block
