@@ -1,4 +1,34 @@
 {
+  "company": {
+    "logo": {
+      "url": "/img/logo.png",
+      "alt": "Логотип компании Makxoot"
+    }
+  },
+  "header": {
+    "menu": [
+      {
+        "title": "Хостинг",
+        "link": "#hosting"
+      },
+      {
+        "title": "CMS Хостинг",
+        "link": "#cms-hosting"
+      },
+      {
+        "title": "Премиум хостинг",
+        "link": "#premium-hosting"
+      },
+      {
+        "title": "VPS Хостинг",
+        "link": "#vps-hosting"
+      },
+      {
+        "title": "Домены",
+        "link": "#domains"
+      }
+    ]
+  },
   "copyright": {
     "author": "AndSmi",
     "copyright": "Developed by AndSmi"

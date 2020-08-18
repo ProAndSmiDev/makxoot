@@ -74,7 +74,8 @@
     font-family: $name
     font-weight: $weight
     font-display: block
-    src: url('../fonts/'+ $dir +'/' + $file) format('truetype')
+    src: url('../fonts/'+ $dir +'/' + $file + '.woff') format('woff'),
+    url('../fonts/'+ $dir +'/' + $file + '.woff2') format('woff2')
 
 @mixin pulseColor($red: 255, $green: 255, $blue: 255)
   0%
