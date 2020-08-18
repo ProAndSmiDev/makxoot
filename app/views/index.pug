@@ -6,10 +6,19 @@ block SEO
     title Title for main page
 
 block header
-    p some header's components is here
+    include ../components/header/logo
+    include ../components/header/menu
+    include ../components/header/panel
 
 block content
-    p some content's components is here
+    include ../components/main-block
+    include ../components/ratings
+    include ../components/tariffs
+    include ../components/advantages
+    include ../components/domain
+    include ../components/clients-reviews
+    include ../components/presents
 
 block footer
-    p some footer's components is here
+    include ../components/footer/logo-socials
+    include ../components/footer/menus
