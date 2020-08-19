@@ -1,0 +1,9 @@
+section#ratings
+  .wrapper
+    .ratings
+      h2.title.__title= content.ratings.title
+      ul.ratings-list
+        each val in content.ratings.sites
+          li.__item
+            a(href=val.url.link title=val.url.title target="_blank").__link
+              img(src=val.picture.src alt=val.picture.alt).__pic

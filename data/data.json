@@ -65,6 +65,41 @@
           "isAnimated": false
         }
       ]
+    },
+    "ratings": {
+      "title": "Макхоот \u2014 лидер авторитетных рейтингов",
+      "sites": [
+        {
+          "picture": {
+            "src": "/img/ratings/siterost-ru-logo.png",
+            "alt": "Логотип сайта Siterost.ru"
+          },
+          "url": {
+            "link": "#",
+            "title": "Перейти на сайт Siterost.ru"
+          }
+        },
+        {
+          "picture": {
+            "src": "/img/ratings/hostings.info-logo.png",
+            "alt": "Логотип сайта Hostings.info"
+          },
+          "url": {
+            "link": "#",
+            "title": "Перейти на сайт Hostings.info"
+          }
+        },
+        {
+          "picture": {
+            "src": "/img/ratings/hosting-cloud-partner-logo.png",
+            "alt": "Логотип сайта Hosting Cloud Partner"
+          },
+          "url": {
+            "link": "#",
+            "title": "Перейти на сайт Hosting Cloud Partner"
+          }
+        }
+      ]
     }
   },
   "copyright": {
