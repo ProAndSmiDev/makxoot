@@ -1,5 +1,5 @@
 @mixin media($width, $type: min)
-  $breakpoints: ("phone": 320px, "desktop": 1200px)
+  $breakpoints: ("phone": 320px, "tablet": 768px, "pc": 992px, "desktop": 1200px)
   @if map_has_key($breakpoints, $width)
     $width: map_get($breakpoints, $width)
     @if $type == max

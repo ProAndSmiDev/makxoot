@@ -1,1 +1,34 @@
 section.main-block#main
+  h1.sr-only Лучший хостинг-провайдер всех времен!
+  .wrapper
+    .slider
+      .swiper-container
+        .swiper-pagination
+        .swiper-wrapper
+          each val in content.main.slider
+            .swiper-slide
+              article.slide-content
+                .__left
+                  h2.title.__title= val.title
+                  p.__desc= val.desc
+                  if(val.isAnimated)
+                    a(href=val.url title=val.urlTitle).__btn.pulse= val.btnText
+                  else
+                    a(href=val.url title=val.urlTitle).__btn= val.btnText
+                .__right
+                  picture.__pic
+                    img(src="/img/main-block/servers.png" alt="Серверная")
+  //.slider
+  //  .swiper-container
+  //    .swiper-pagination
+  //    .swiper-wrapper
+  //      .swiper-slide
+  //        img(src="/img/projects/" alt='')
+  //        span.projects__category
+  //    .slider__arrows
+  //      button.prev-slide
+  //        svg
+  //          use(xlink:href="/img/arrows.svg#left")
+  //      button.next-slide
+  //        svg
+  //          use(xlink:href="/img/arrows.svg#right")

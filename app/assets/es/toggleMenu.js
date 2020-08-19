@@ -1,5 +1,5 @@
 ;
-(function(){
+(function() {
   const burger = document.querySelector('.nav__burger');
   const hMenu = document.querySelector('.nav-list');
 
